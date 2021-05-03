@@ -13,7 +13,7 @@ function App() {
       name: 'portfolio',
       description: 'Photos of projects',
     },
-    // { name: 'portraits', description: 'Portraits of people in my life' },
+    // { name: 'about', description: 'Portraits of people in my life' },
     // { name: 'food', description: 'Delicious delicacies' },
     // { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
