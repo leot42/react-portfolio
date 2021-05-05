@@ -4,7 +4,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  /* --primary: #8c54ff; */
   --secondary: #f3a847;
   --tertiary: #b12704;
   --light: #fafafa;

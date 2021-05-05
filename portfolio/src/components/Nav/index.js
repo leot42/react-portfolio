@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-  const tabs = ['About', 'Gallery', 'Contact'];
+  const tabs = ['About', 'Gallery', 'Contact', 'Resume'];
 
   return (
     <ul className="nav nav-tabs">

@@ -4,6 +4,7 @@ import './App.css';
 import About from './components/About'
 import Gallery from './components/Gallery';
 import Nav from './components/Nav';
+import Resume from './components/Resume'
 import ContactForm from './components/Contact';
 
 
@@ -36,6 +37,7 @@ function App() {
      case 'About': return <About/>;
      case 'Gallery': return <Gallery/>;
      case 'Contact': return <ContactForm/>;
+     case 'Resume': return <Resume/>;
      default:
        break;
    }
