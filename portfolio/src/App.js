@@ -18,31 +18,44 @@ function App() {
     // { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
+  // const [navState] = useState(['About Me', 'Contact', 'Resume', 'Portfolio']);
+  const [currentPage, handlePageChange] = useState('About');
+
+  // const [currentNavState, setNavState] = useState(navState[0]);
+
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const [contactSelected, setContactSelected] = useState(false);
 
+  const renderPage = () => {
+    // Add a switch statement that will return the appropriate component of the 'currentPage'
+    // YOUR CODE HERE
+    //
+   switch (currentPage) {
+    //  case 'Home': return <Home/>;
+     case 'About': return <About/>;
+     case 'Gallery': return <Gallery/>;
+     case 'Contact': return <ContactForm/>;
+     default:
+       break;
+   }
+  };
+  
   return (
     <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div>
+        {
+          // Render the component returned by 'renderPage()'
+          // YOUR CODE HERE
+          //
+          renderPage(currentPage)
+
+        }
+      </div>
     </div>
   );
+
 }
 
 export default App;
