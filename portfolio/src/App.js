@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 import Resume from './components/Resume'
 import ContactForm from './components/Contact';
 import Home from './components/Home'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
         }
       </div>
+      <Footer/>
     </div>
   );
 

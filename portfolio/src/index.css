@@ -289,3 +289,32 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+.main-footer {
+  background: var(--sky-blue);
+  /* display: grid; */
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  grid-area: footer;
+  flex-direction: column;
+  justify-content: right;
+  /* bottom: auto; */
+  /* position: fixed; */
+  width: 100%;
+}
+
+.footer-content-right {
+  margin-right:20px;
+  /* margin-top:20px; */
+  /* float:right; */
+}
+
+@media (min-width: 700px) {
+  .main-footer {
+    flex-direction: row;
+    font-size: smaller;
+    justify-content: center;
+}
+}
