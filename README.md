@@ -13,7 +13,7 @@ My portfolio made using React
 
 ## Features
 
-This app is a portfolio SPA.
+This app is a react portfolio SPA.
 
 ## Installation
 
